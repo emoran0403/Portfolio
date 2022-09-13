@@ -17,7 +17,7 @@ const MainPage = (props: Types.MainPageProps) => {
               <h3 className="card-title my-2 text-center">{project.title}</h3>
               <hr></hr>
               <img
-                src={`/Assets/ProjectCardScreenCaps/${project.title}.PNG`}
+                src={`${process.env.PUBLIC_URL}/Assets/ProjectCardScreenCaps/${project.title.replace(/\s+/g, "")}.PNG`}
                 height={750}
                 width={1500}
                 className="card-img-top"

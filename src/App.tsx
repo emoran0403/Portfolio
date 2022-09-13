@@ -13,33 +13,6 @@ import TicTacToe from "./Pages/ProjectPages/TicTacToe";
 import Resume from "./Pages/Resume";
 
 const App = (props: AppProps) => {
-  // when the app loads, make a fetch request to each project to wake them up
-  //! would this be better as a fetch to an endpoint that does this work?
-  // i don't really need the response or the console logs, just making the request is enough
-  useEffect(() => {
-    // define the projectArray, an array containing
-    const projectArray = [
-      Fetcher.GET("https://ejmdev-idlescape.herokuapp.com/"),
-      Fetcher.GET("https://ejmdev-tic-tac-toe.herokuapp.com/"),
-      Fetcher.GET("https://eric-studio-ghibli-api.herokuapp.com/"),
-      Fetcher.GET("https://eric-just-my-type.herokuapp.com/"),
-    ];
-
-    Promise.allSettled(projectArray)
-      .then((res) =>
-        Promise.allSettled(
-          res.map((r) => (r.status === "fulfilled" ? r.value.json() : Promise.reject(`Bad response from ${r.reason}`)))
-        )
-      )
-      .then((results) => {
-        const sitesFailed = results.filter((res) => res.status === "rejected");
-        const sitesLoaded = results.filter((res) => res.status === "fulfilled");
-
-        console.log({ sitesFailed, sitesLoaded });
-      })
-      .catch(console.error);
-  }, []);
-
   return (
     <div>
       <Navbar />

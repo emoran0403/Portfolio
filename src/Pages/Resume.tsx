@@ -7,11 +7,13 @@ const Resume = (props: Types.ResumeProps) => {
 
   return (
     <div>
-      <iframe
-        width="100%"
-        height="93%"
-        src="https://docs.google.com/document/d/1F7eCqSJMzCzhs6Mq0qkMqSwNJtV2fMwwedde925l4sU/edit?usp=sharing"
-      ></iframe>
+      <div style={{ height: "91vh" }}>
+        <iframe
+          width="100%"
+          height={"100%"}
+          src="https://docs.google.com/document/d/1F7eCqSJMzCzhs6Mq0qkMqSwNJtV2fMwwedde925l4sU/preview"
+        ></iframe>
+      </div>
     </div>
   );
 };
