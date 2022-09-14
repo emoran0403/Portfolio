@@ -43,6 +43,19 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <ul>
+                  <li>Enable the game to track wins for local multiplayer</li>
+                  <li>Add a dummy computer player to choose random tiles to play against</li>
+                  <li>Add a smart computer player that implements a strategy to choose tiles</li>
+                  <li>Online Multiplayer</li>
+                </ul>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {TicTacToeDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}

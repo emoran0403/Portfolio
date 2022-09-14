@@ -62,6 +62,17 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <ul>
+                  <li>Add remaining endpoints for species and vehicles</li>
+                  <li>Implement cross referencing between all endpoints</li>
+                </ul>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {StudioGhibliDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}

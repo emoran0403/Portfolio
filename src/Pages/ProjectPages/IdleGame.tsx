@@ -62,6 +62,19 @@ const IdleGame = (props: Types.IdleGameProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <p>
+                  View the roadmap for Idlescape on{" "}
+                  <a href={"https://github.com/emoran0403/Idle-Game#roadmap"} target="_blank">
+                    Github
+                  </a>
+                </p>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {IdleGameDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}

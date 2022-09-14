@@ -46,6 +46,19 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <ul>
+                  <li>Connect to a database to track player high scores</li>
+                  <li>Add a high scores view</li>
+                  <li>Enable players to add their own sentences to a custom game</li>
+                  <li>Enable players to share their custom games with friends</li>
+                </ul>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {JustMyTypeDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}

@@ -72,6 +72,19 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <ul>
+                  <li>Add Selenium sripts for additional websites</li>
+                  <li>Launch multiple Selenium instances to scrape multiple websites in parallel</li>
+                  <li>Enable writing to the sheet after each date is found instead of waiting for all dates</li>
+                  <li>Write the website URL to a new column for spot checking</li>
+                </ul>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {GundamGetterDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}

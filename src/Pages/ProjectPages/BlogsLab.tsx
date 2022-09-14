@@ -51,6 +51,19 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
             <hr></hr>
 
             <div className="card-body">
+              <h3>Roadmap</h3>
+              <div>
+                <ul>
+                  <li>Allow users to create their own tags</li>
+                  <li>Allow users to add multiple tags to a post</li>
+                  <li>Add a search feature to search by author / title / tags</li>
+                  <li>Public and private profile pages</li>
+                </ul>
+              </div>
+            </div>
+            <hr></hr>
+
+            <div className="card-body">
               {BlogsLabDetails.techStack.sort().map((tech) => (
                 <span
                   key={`tech-stack-item-${tech}`}
