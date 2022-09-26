@@ -26,7 +26,7 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   the MySQL database, the API endpoints, and the server to handle the endpoints.`,
   techStack: [`MySQL`, `Express`, `React`, `Typescript`, `NodeJS`],
   pageURL: `/blogslab`,
-  appURL: ``,
+  appURL: `https://ejm-dev-blogs.fly.dev/`,
   gitHubURL: "https://github.com/emoran0403/blogs-lab",
   lab: true,
 };
