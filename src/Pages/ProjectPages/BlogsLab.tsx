@@ -23,7 +23,7 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
               </p>
               <p>
                 My Blogs Lab also incorporates Mailgun and Stripe. I've implemented Mailgun with a feature allowing
-                users to send an email to an author. Stripe processess credit card payments, which I've implemented into
+                users to send an email to an author. Stripe processes credit card payments, which I've implemented into
                 a donate feature, letting users donate to other authors.
               </p>
             </div>
