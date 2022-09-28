@@ -22,6 +22,13 @@ const IdleGame = (props: Types.IdleGameProps) => {
                 skills, go on quests, or engage in combat with various enemies. Options vary for each location the
                 player may travel to.
               </p>
+              <p>
+                IdleScape runs on a large global state object to maintain the player's data, such as experience,
+                location, inventory, etc. Just about every component reads and updates multiple parts of this state
+                object. To help manage this, I utilized Redux by way of the Redux Toolkit. RTK enabled me to portion out
+                'slices' of state that were related: experience, quest progress, etc. By focusing the scope of the
+                global state to just the slice, the workflow is greatly simplified.
+              </p>
             </div>
             <hr></hr>
             <div className="card-body">
@@ -46,10 +53,11 @@ const IdleGame = (props: Types.IdleGameProps) => {
                 actual code.
               </p>
               <p>
-                Redux and MongoDB were not part of the coursework, so implementing these were initially a challenge. To
-                familiarize myself with Redux, I built a small app to update multiple slices of state in different ways
-                to mimic the functionality of the final project with a much simpler implementation. Once the small app
-                was complete, I expanded upon it as a framework and added in new features and functionality.
+                Redux and MongoDB were not part of the coursework, so implementing these were initially a challenge as I
+                had to learn them on my own. To familiarize myself with Redux, I built a small app to update multiple
+                slices of state in different ways to mimic the functionality of the final project with a much simpler
+                implementation. Once the small app was complete, I expanded upon it as a framework and added in new
+                features and functionality until it became IdleScape.
               </p>
               <p>
                 I wanted to make Idlescape as close to Runescape as I could, which meant using large amounts of varied
