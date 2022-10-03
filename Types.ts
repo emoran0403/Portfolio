@@ -7,6 +7,7 @@ export interface GundamGetterProps {}
 export interface BlogsLabProps {}
 export interface ResumeProps {}
 export interface NavbarProps {}
+export interface ProfileProps {}
 
 export interface IFetchOptions {
   headers: IHeaderObject;

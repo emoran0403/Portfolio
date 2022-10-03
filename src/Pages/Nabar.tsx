@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import * as Types from "../../../Types";
-import { ProjectArray } from "../../ProjectInfo";
+import * as Types from "../../Types";
+import { ProjectArray } from "../ProjectInfo";
 
 const Navbar = (props: Types.NavbarProps) => {
   const loc = useLocation();
@@ -17,7 +17,18 @@ const Navbar = (props: Types.NavbarProps) => {
             nav(`/`);
           }}
         >
-          Home
+          Projects
+        </button>
+      </div>
+
+      <div className="col-1 d-flex justify-content-center">
+        <button
+          className={`btn w-100 mx-1 btn-${loc.pathname != "/profile" ? "primary" : "warning"}`}
+          onClick={() => {
+            nav(`/profile`);
+          }}
+        >
+          Profile
         </button>
       </div>
 

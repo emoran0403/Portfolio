@@ -7,10 +7,11 @@ import BlogsLab from "./Pages/ProjectPages/BlogsLab";
 import GundamGetter from "./Pages/ProjectPages/GundamGetter";
 import IdleGame from "./Pages/ProjectPages/IdleGame";
 import JustMyType from "./Pages/ProjectPages/JustMyType";
-import Navbar from "./Pages/ProjectPages/Nabar";
+import Navbar from "./Pages/Nabar";
 import StudioGhibli from "./Pages/ProjectPages/StudioGhibli";
 import TicTacToe from "./Pages/ProjectPages/TicTacToe";
 import Resume from "./Pages/Resume";
+import Profile from "./Pages/Profile";
 
 const App = (props: AppProps) => {
   return (
@@ -18,6 +19,7 @@ const App = (props: AppProps) => {
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/idlegame" element={<IdleGame />} />
         <Route path="/studioghibli" element={<StudioGhibli />} />
         <Route path="/tictactoe" element={<TicTacToe />} />

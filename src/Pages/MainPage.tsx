@@ -2,11 +2,9 @@ import * as React from "react";
 import * as Types from "../../Types";
 import { ProjectArray } from "../ProjectInfo";
 import { useNavigate } from "react-router-dom";
-// import { SiMysql, SiExpress, SiMongodb, SiJavascript, SiSelenium, SiReact, SiNodedotjs, SiHtml5, SiCss3 } from "react-icons/si";
 
 const MainPage = (props: Types.MainPageProps) => {
   const nav = useNavigate();
-  // <SiReact size="2rem" />
   const projectsJSX = (isLab: boolean) => {
     return (
       <div>
