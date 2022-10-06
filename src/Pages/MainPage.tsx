@@ -67,9 +67,13 @@ const MainPage = (props: Types.MainPageProps) => {
                   <a className="btn btn-primary" href={project.gitHubURL} rel="noreferrer" target="_blank">
                     Git Hub Repo
                   </a>
-                  <a className="btn btn-primary" href={project.appURL} rel="noreferrer" target="_blank">
-                    Project Site
-                  </a>
+                  {project.title === "Gundam Getter" ? (
+                    ""
+                  ) : (
+                    <a className="btn btn-primary" href={project.appURL} rel="noreferrer" target="_blank">
+                      Project Site
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

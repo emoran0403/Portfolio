@@ -17,12 +17,24 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
             <div className="card-body">
               <h3 className="text-center">Overview</h3>
               <p>
-                My friend at Gundam Planet maintains a Google Sheet with 3000+ entries for upcoming model kit release
-                dates for their customers. Updating this list requires checking one of their many distributors' websites
-                for the information. This was done manually, and updating the entire list required around 8 hours of
-                manual data entry. Due to the nature of the industry, these release dates are subject to change multiple
-                times. This state of flux was exacerbated when the pandemic began, leading to situations where by the
-                time the 3000th entry was entered, something would undoubtedly be out of date.
+                My friend at{" "}
+                <a href="https://www.gundamplanet.com/" rel="noreferrer" target="_blank">
+                  Gundam Planet
+                </a>{" "}
+                maintains a{" "}
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1CIlUvXqWgsoz_MNrpkRCrn209Mbo0tgdlqQBs3YL_uk/edit#gid=0"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Google Sheet
+                </a>{" "}
+                with 3000+ entries for upcoming model kit release dates for their customers. Updating this list requires
+                checking one of their many distributors' websites for the information. This was done manually, and
+                updating the entire list required around 8 hours of manual data entry. Due to the nature of the
+                industry, these release dates are subject to change multiple times. This state of flux was exacerbated
+                when the pandemic began, leading to situations where by the time the 3000th entry was entered, something
+                would undoubtedly be out of date.
               </p>
               <p>
                 Behind the scenes, Gundam Getter reads the SKU data from Google Sheets via the Google Sheets API. Its
