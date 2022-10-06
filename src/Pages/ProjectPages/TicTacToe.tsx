@@ -12,10 +12,10 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
       <ProjectLinks appURL={TicTacToeDetails.appURL} gitHubURL={TicTacToeDetails.gitHubURL} />
 
       <div className="d-flex justify-content-center">
-        <div className="col-6">
+        <div className="col-8">
           <div className="card">
             <div className="card-body">
-              <h3>Overview</h3>
+              <h3 className="text-center">Overview</h3>
               <p>
                 Your basic Tic Tac Toe, Noughts and Crosses, or X's and O's game. Clicking in a square places the symbol
                 for the current player. Every turn the game checks for a winner, or when the board is full, displays
@@ -24,14 +24,14 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
             </div>
             <hr></hr>
             <div className="card-body">
-              <h3>Features</h3>
+              <h3 className="text-center">Features</h3>
               <p>1 function checks the entire board for a winning condition after every turn.</p>
               <p>The game resets the board after a win or draw.</p>
             </div>
             <hr></hr>
 
             <div className="card-body">
-              <h3>Challenges</h3>
+              <h3 className="text-center">Challenges</h3>
               <p>
                 This was one of the first labs in the course that brought together the concepts taught in the HTML, CSS,
                 and JS sections, with a healthy dose of "If you don't know it, google it". One of the small things not
@@ -43,7 +43,7 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Roadmap</h3>
+              <h3 className="text-center">Roadmap</h3>
               <div>
                 <ul>
                   <li>Enable the game to track wins for local multiplayer</li>

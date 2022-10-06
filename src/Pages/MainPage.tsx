@@ -11,17 +11,33 @@ const MainPage = (props: Types.MainPageProps) => {
         <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
         <div className="d-flex flex-wrap justify-content-center">
           {ProjectArray.filter((project) => project.lab === isLab).map((project) => (
-            <div key={`project-${project.title}`} className="card col-6 m-5 ">
+            <div key={`project-${project.title}`} className="card col-8 m-5 ">
               <h3 className="card-title my-2 text-center">{project.title}</h3>
               <hr></hr>
-              <img
-                src={`${process.env.PUBLIC_URL}/Assets/ProjectCardScreenCaps/${project.title.replace(/\s+/g, "")}.PNG`}
-                height={750}
-                width={1500}
-                className="card-img-top"
-                alt={`${project.title}`}
-                title={`${project.title}`}
-              />
+              {project.title === "Gundam Getter" ? (
+                <iframe
+                  width="1267"
+                  height="750"
+                  src="https://www.youtube.com/embed/prFtAVsyJoE"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <img
+                  src={`${process.env.PUBLIC_URL}/Assets/ProjectCardScreenCaps/${project.title.replace(
+                    /\s+/g,
+                    ""
+                  )}.PNG`}
+                  height={750}
+                  width={1500}
+                  className="card-img-top"
+                  alt={`${project.title}`}
+                  title={`${project.title}`}
+                />
+              )}
+
               <hr></hr>
               <div className="card-body">
                 <p className="card-text text-center">{project.details}</p>
@@ -48,10 +64,10 @@ const MainPage = (props: Types.MainPageProps) => {
                   >
                     Details
                   </button>
-                  <a className="btn btn-primary" href={project.gitHubURL} target="_blank">
+                  <a className="btn btn-primary" href={project.gitHubURL} rel="noreferrer" target="_blank">
                     Git Hub Repo
                   </a>
-                  <a className="btn btn-primary" href={project.appURL} target="_blank">
+                  <a className="btn btn-primary" href={project.appURL} rel="noreferrer" target="_blank">
                     Project Site
                   </a>
                 </div>

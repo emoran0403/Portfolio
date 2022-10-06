@@ -10,10 +10,10 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
       <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
       <ProjectLinks appURL={BlogsLabDetails.appURL} gitHubURL={BlogsLabDetails.gitHubURL} />
       <div className="d-flex justify-content-center">
-        <div className="col-6">
+        <div className="col-8">
           <div className="card">
             <div className="card-body">
-              <h3>Overview</h3>
+              <h3 className="text-center">Overview</h3>
               <p>
                 This Full-Stack CRUD application is the last major lab in the course, bringing all the previous learning
                 together in one nice package. Users sign up with an email, and are issued a JSON Web Token for
@@ -29,7 +29,7 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
             </div>
             <hr></hr>
             <div className="card-body">
-              <h3>Features</h3>
+              <h3 className="text-center">Features</h3>
               <p>
                 Full-Stack CRUD app where users can securely register, view other authors, read, write, edit, and delete
                 blogs.
@@ -40,7 +40,7 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Challenges</h3>
+              <h3 className="text-center">Challenges</h3>
               <p>
                 The toughest part of the lab was the size of the project compared to the previous labs. This was the
                 first time there was a large number of components and features - it was not 'complete' when the lab was
@@ -51,7 +51,7 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Roadmap</h3>
+              <h3 className="text-center">Roadmap</h3>
               <div>
                 <ul>
                   <li>Allow users to create their own tags</li>

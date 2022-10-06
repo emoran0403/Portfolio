@@ -12,10 +12,10 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
       <ProjectLinks appURL={JustMyTypeDetails.appURL} gitHubURL={JustMyTypeDetails.gitHubURL} />
 
       <div className="d-flex justify-content-center">
-        <div className="col-6">
+        <div className="col-8">
           <div className="card">
             <div className="card-body">
-              <h3>Overview</h3>
+              <h3 className="text-center">Overview</h3>
               <p>
                 Just My Type is a typing game built entirely with HTML, CSS, and JS. The player types the sentences
                 shown on the screen, restarting the sentence if they make a mistake. The game also times the player and
@@ -24,7 +24,7 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
             </div>
             <hr></hr>
             <div className="card-body">
-              <h3>Features</h3>
+              <h3 className="text-center">Features</h3>
               <p>
                 On-screen keyboard, highlighting buttons as they are pressed, and swapping to an uppercase keyboard when
                 the shift button is held.
@@ -34,7 +34,7 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Challenges</h3>
+              <h3 className="text-center">Challenges</h3>
               <p>
                 There was a lot of conditional logic behind the scenes. Every key press had to be evaluated as it could
                 have been the wrong key, the end of a particular word, or the end of the sentence, and each of those
@@ -46,7 +46,7 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Roadmap</h3>
+              <h3 className="text-center">Roadmap</h3>
               <div>
                 <ul>
                   <li>Connect to a database to track player high scores</li>

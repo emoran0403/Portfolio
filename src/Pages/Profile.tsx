@@ -14,8 +14,8 @@ const Profile = (props: Types.ProfileProps) => {
         <div className="col-6">
           <div className="card">
             <div className="card-body">
-              <p>profile picture here</p>
-              <h3>About Me</h3>
+              <p>(Profile picture coming soon)</p>
+              <h3 className="text-center">About Me</h3>
               <p>Hello! I'm Eric Moran.</p>
               <p>
                 I started my career in middle school math education to share my joy of math and learning with the next
@@ -42,34 +42,74 @@ const Profile = (props: Types.ProfileProps) => {
                 but I am extremely eager to continue developing this new skillset and passion as I help others along the
                 way.
               </p>
+              <p>
+                When I'm not coding, I enjoy baking, going outdoors, and gaming. My most delicious recipes are vegan
+                banana bread and vegan pumpkin bread. My mother routinely sells out of these at her shop. Asheville NC
+                has no lack of hiking trails or scenic views. I've heard you can hike one a day and still have new
+                trails after a year. My favorite spots (so far) are Black Balsam Knob and Bearwallow Mountain.
+                Waldeinsamkeit is an accurate description of the feeling you get when you reach the top and take in the
+                view. I've recently been playing modded minecraft on a server with friends; it has been a great way to
+                stay connected when we're all in different states. When I'm feeling a little more competitive, I'll hop
+                on Master Chief Collection and do some games of big team on Halo 4.
+              </p>
             </div>
             <hr></hr>
             <div className="card-body">
-              <h3>Socials</h3>
-              <a
-                className="btn btn-primary btn-sm m-2"
-                href={"https://www.linkedin.com/in/ejm-dev/"}
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
-              <a
-                className="btn btn-primary btn-sm m-2"
-                href={"https://github.com/emoran0403"}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
+              <h3 className="text-center">Socials</h3>
+              <div className="d-flex justify-content-center">
+                <a
+                  className="btn btn-primary btn-sm m-2"
+                  href={"https://www.linkedin.com/in/ejm-dev/"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  className="btn btn-primary btn-sm m-2"
+                  href={"https://github.com/emoran0403"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </div>
             </div>
-            {/* <hr></hr>
+            <hr></hr>
 
             <div className="card-body">
-              <h3>Block 3</h3>
-              <p></p>
+              <h3 className="text-center">Projects I'm working on</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/emoran0403/Idle-Game" rel="noreferrer" target="_blank">
+                    IdleScape
+                  </a>{" "}
+                  - Varrock city, Cooking skill, Grand Exchange API
+                </li>
+                <li>
+                  <a href="https://github.com/emoran0403/Gundam-Getter" rel="noreferrer" target="_blank">
+                    Gundam Getter
+                  </a>{" "}
+                  - Targeted scraping scripts and fallback scripts
+                </li>
+                <li>
+                  <a href="https://github.com/emoran0403/Daily_Tarot_Picker" rel="noreferrer" target="_blank">
+                    Daily Tarot Journal
+                  </a>{" "}
+                  - A Full-Stack mindfulness app with a tarot twist
+                </li>
+                <li>
+                  <a href="https://github.com/emoran0403/Leet-Code-Examples" rel="noreferrer" target="_blank">
+                    Codewars App
+                  </a>{" "}
+                  - An app to showcase my solutions to the challenges on{" "}
+                  <a href="https://www.codewars.com/" rel="noreferrer" target="_blank">
+                    CodeWars
+                  </a>
+                </li>
+              </ul>
             </div>
-            <hr></hr> */}
+            <hr></hr>
           </div>
         </div>
       </div>

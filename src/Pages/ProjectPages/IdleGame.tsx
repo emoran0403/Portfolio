@@ -12,7 +12,7 @@ const IdleGame = (props: Types.IdleGameProps) => {
       <ProjectLinks appURL={IdleGameDetails.appURL} gitHubURL={IdleGameDetails.gitHubURL} />
 
       <div className="d-flex justify-content-center">
-        <div className="col-6">
+        <div className="col-8">
           <div className="card">
             <div className="card-body">
               <h3 className="text-center">Overview</h3>
@@ -70,11 +70,11 @@ const IdleGame = (props: Types.IdleGameProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Roadmap</h3>
+              <h3 className="text-center">Roadmap</h3>
               <div>
                 <p>
                   View the roadmap for Idlescape on{" "}
-                  <a href={"https://github.com/emoran0403/Idle-Game#roadmap"} target="_blank">
+                  <a href={"https://github.com/emoran0403/Idle-Game#roadmap"} rel="noreferrer" target="_blank">
                     Github
                   </a>
                 </p>

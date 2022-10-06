@@ -12,10 +12,10 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
       <ProjectLinks appURL={StudioGhibliDetails.appURL} gitHubURL={StudioGhibliDetails.gitHubURL} />
 
       <div className="d-flex justify-content-center">
-        <div className="col-6">
+        <div className="col-8">
           <div className="card">
             <div className="card-body">
-              <h3>Overview</h3>
+              <h3 className="text-center">Overview</h3>
               <p>
                 This was one of the first labs assigned after being introduced to React, and focused on fetching data
                 from an external API. Landing on the home page triggers a fetch to the people, films, and locations
@@ -25,11 +25,11 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
             </div>
             <hr></hr>
             <div className="card-body">
-              <h3>Features</h3>
+              <h3 className="text-center">Features</h3>
               <p>
                 Fetches data from the{" "}
                 <span>
-                  <a target="_blank" href="https://ghibliapi.herokuapp.com/#">
+                  <a rel="noreferrer" target="_blank" href="https://ghibliapi.herokuapp.com/#">
                     Studio Ghibli API
                   </a>
                 </span>{" "}
@@ -39,7 +39,7 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
               <p>
                 This lab is built with{" "}
                 <span>
-                  <a target="_blank" href="https://create-react-app.dev/">
+                  <a rel="noreferrer" target="_blank" href="https://create-react-app.dev/">
                     create-react-app
                   </a>
                 </span>{" "}
@@ -49,7 +49,7 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Challenges</h3>
+              <h3 className="text-center">Challenges</h3>
               <p>
                 The most challenging part of this lab was creating the relationships between the data given by the API
                 endpoints. For example, the data for a particular film only lists character endpoints, not the specific
@@ -62,7 +62,7 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Roadmap</h3>
+              <h3 className="text-center">Roadmap</h3>
               <div>
                 <ul>
                   <li>Add remaining endpoints for species and vehicles</li>
