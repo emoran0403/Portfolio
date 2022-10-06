@@ -16,8 +16,8 @@ const MainPage = (props: Types.MainPageProps) => {
               <hr></hr>
               {project.title === "Gundam Getter" ? (
                 <iframe
-                  width="1267"
-                  height="750"
+                  id="gundamFrame"
+                  style={{ position: "relative", height: "100%", width: "100%" }}
                   src="https://www.youtube.com/embed/prFtAVsyJoE"
                   title="YouTube video player"
                   frameBorder="0"
