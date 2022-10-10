@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import * as Types from "../../Types";
-import { ProjectArray } from "../ProjectInfo";
+// import { ProjectArray } from "../ProjectInfo";
 
 const Navbar = (props: Types.NavbarProps) => {
   const loc = useLocation();
   const nav = useNavigate();
-  const pageURLs = ProjectArray.map((proj) => ({ URL: proj.pageURL, title: proj.title }));
+  // const pageURLs = ProjectArray.map((proj) => ({ URL: proj.pageURL, title: proj.title }));
 
   return (
     <div className="d-flex mt-4 justify-content-center ">
@@ -32,13 +32,13 @@ const Navbar = (props: Types.NavbarProps) => {
         </button>
       </div>
 
-      {pageURLs.map((link) => (
+      {/* {pageURLs.map((link) => (
         <div key={link.title} className="col-1 d-flex justify-content-center align-items-center">
           <Link to={link.URL} className={`btn w-100 mx-1 btn-${loc.pathname != link.URL ? "primary" : "warning"}`}>
             {link.title}
           </Link>
         </div>
-      ))}
+      ))} */}
 
       {loc.pathname != "/resume" && (
         <div className="col-1 d-flex justify-content-center">

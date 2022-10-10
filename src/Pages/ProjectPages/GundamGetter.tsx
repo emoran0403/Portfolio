@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as Types from "../../../Types";
 import { GundamGetterDetails } from "../../ProjectInfo";
-import ProjectLinks from "../../Components/ProjLinks";
 
 const GundamGetter = (props: Types.GundamGetterProps) => {
   return (
@@ -9,7 +8,11 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
       <h1 className="text-center">Gundam Getter</h1>
       <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
 
-      <ProjectLinks appURL={GundamGetterDetails.appURL} gitHubURL={GundamGetterDetails.gitHubURL} />
+      <div className="d-flex justify-content-center">
+        <a className="btn btn-primary btn-sm m-2" href={GundamGetterDetails.gitHubURL} target="_blank" rel="noreferrer">
+          Git Hub Repo
+        </a>
+      </div>
 
       <div className="d-flex justify-content-center">
         <div className="col-8">
