@@ -10,7 +10,7 @@ const Navbar = (props: Types.NavbarProps) => {
 
   return (
     <div className="d-flex mt-4 justify-content-center ">
-      <div className="col-1 d-flex justify-content-center">
+      <div className=" d-flex justify-content-center">
         <button
           className={`btn w-100 mx-1 btn-${loc.pathname != "/" ? "primary" : "warning"}`}
           onClick={() => {
@@ -21,7 +21,7 @@ const Navbar = (props: Types.NavbarProps) => {
         </button>
       </div>
 
-      <div className="col-1 d-flex justify-content-center">
+      <div className=" d-flex justify-content-center">
         <button
           className={`btn w-100 mx-1 btn-${loc.pathname != "/profile" ? "primary" : "warning"}`}
           onClick={() => {
@@ -33,7 +33,7 @@ const Navbar = (props: Types.NavbarProps) => {
       </div>
 
       {/* {pageURLs.map((link) => (
-        <div key={link.title} className="col-1 d-flex justify-content-center align-items-center">
+        <div key={link.title} className=" d-flex justify-content-center align-items-center">
           <Link to={link.URL} className={`btn w-100 mx-1 btn-${loc.pathname != link.URL ? "primary" : "warning"}`}>
             {link.title}
           </Link>
@@ -41,7 +41,7 @@ const Navbar = (props: Types.NavbarProps) => {
       ))} */}
 
       {loc.pathname != "/resume" && (
-        <div className="col-1 d-flex justify-content-center">
+        <div className=" d-flex justify-content-center">
           <button
             className={`btn w-100 mx-1 btn-${loc.pathname != "/resume" ? "primary" : "warning"}`}
             onClick={() => {
@@ -54,7 +54,7 @@ const Navbar = (props: Types.NavbarProps) => {
       )}
 
       {loc.pathname === "/resume" && (
-        <div className="col-1 d-flex justify-content-center">
+        <div className=" d-flex justify-content-center">
           <a
             className="btn w-100 mx-1 btn-info"
             href={`${process.env.PUBLIC_URL}/Assets/Resume/Eric_Moran_Resume.pdf`}

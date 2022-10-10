@@ -32,7 +32,7 @@ const MainPage = (props: Types.MainPageProps) => {
                   )}.PNG`}
                   height={750}
                   width={1500}
-                  className="card-img-top"
+                  className="card-img-top img-fluid"
                   alt={`${project.title}`}
                   title={`${project.title}`}
                 />
