@@ -15,15 +15,17 @@ const MainPage = (props: Types.MainPageProps) => {
               <h3 className="card-title my-2 text-center">{project.title}</h3>
               <hr></hr>
               {project.title === "Gundam Getter" ? (
-                <iframe
-                  id="gundamFrame"
-                  style={{ position: "relative", height: "40em", width: "100%" }}
-                  src="https://www.youtube.com/embed/prFtAVsyJoE"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <a id="gundamDemo">
+                  <iframe
+                    id="gundamFrame"
+                    style={{ position: "relative", height: "40em", width: "100%" }}
+                    src="https://www.youtube.com/embed/prFtAVsyJoE"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </a>
               ) : (
                 <img
                   src={`${process.env.PUBLIC_URL}/Assets/ProjectCardScreenCaps/${project.title.replace(
